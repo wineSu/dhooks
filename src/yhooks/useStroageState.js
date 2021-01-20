@@ -1,5 +1,10 @@
 import { useCallback, useState } from 'react';
 
+/**
+ * stroage 保存状态
+ * @param {*} cookieKey 
+ * @param {*} param1 
+ */
 export function useStroageState(cookieKey, {dafaultVal, expire}) {
 
     const storage = window.localStorage;

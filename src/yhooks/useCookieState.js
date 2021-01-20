@@ -25,6 +25,11 @@ const getCookie = (Name) => {
     return null;
 }
 
+/**
+ * 设置状态并通过 cookie保存
+ * @param {*} cookieKey 
+ * @param {*} param1 
+ */
 export function useCookieState(cookieKey, {dafaultVal, expire}) {
     const [state, setState] = useState(() => {
         return getCookie(cookieKey) || dafaultVal;

@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { usePersistFn } from './usePersistFn';
+import { useEffect, useCallback } from 'react';
+
 /**
  * 定时器
  * @param {*} fn 
@@ -8,7 +8,7 @@ import { usePersistFn } from './usePersistFn';
 export function useTimeout(fn, delay = 1) {
 
     // 避免 fn 中被重复渲染 保持同一引用
-    const timerFn = usePersistFn(fn);
+    const timerFn = useCallback(fn, []);
 
     useEffect(() => {
         

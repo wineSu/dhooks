@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 /**
- * 同一引用
+ * 拿到上次引用 fn，避免闭包带来的无法更新的问题
  * @param {*} fn 
  */
 export function usePersistFn(fn) {
@@ -12,7 +12,7 @@ export function usePersistFn(fn) {
 
   if (!persistFn.current) {
     persistFn.current = function (...args) {
-      // 保持第一次的引用
+      // 上一次的引用
       return fnRef.current.apply(this, args);
     };
   }

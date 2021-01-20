@@ -11,6 +11,7 @@ import useStroageStateDemo from './demo/useStroageState';
 import useTimerDemo from './demo/useTimer';
 import useCreationDemo from './demo/useCreation';
 import useEventListenerDemo from './demo/useEventListener';
+import usePersistFnDemo from './demo/usePersistFn';
 
 import './index.less';
 
@@ -41,6 +42,9 @@ let List = [{
 },{
   name: 'useEventListenerDemo',
   com: useEventListenerDemo
+},{
+  name: 'usePersistFnDemo',
+  com: usePersistFnDemo
 }];
 
 class App extends Component {

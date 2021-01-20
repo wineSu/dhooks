@@ -10,7 +10,7 @@ const useCookieStateDemo = () => {
   return (
     <input
       value={message}
-      placeholder="Please enter some words..."
+      placeholder="输入后刷新页面保留数据"
       onChange={(e) => setMessage(e.target.value)}
       style={{ width: 300 }}
     />
