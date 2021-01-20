@@ -25,3 +25,7 @@ export {
 export {
     useStroageState
 } from './useStroageState';
+
+export {
+    useTimer
+} from './useTimer';
