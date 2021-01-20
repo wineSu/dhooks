@@ -33,3 +33,7 @@ export {
 export {
     useCreation
 } from './useCreation';
+
+export {
+    useEventListener
+} from './useEventListener';

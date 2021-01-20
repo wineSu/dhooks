@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink, Redirect } from "react-router-dom";
 
 import useTimeoutDemo from './demo/useTimeout';
 import useFetchDemo from './demo/useFetch';
@@ -10,8 +10,38 @@ import useCookieStateDemo from './demo/useCookieState';
 import useStroageStateDemo from './demo/useStroageState';
 import useTimerDemo from './demo/useTimer';
 import useCreationDemo from './demo/useCreation';
+import useEventListenerDemo from './demo/useEventListener';
 
 import './index.less';
+
+let List = [{
+  name: 'useTimeoutDemo',
+  com: useTimeoutDemo
+},{
+  name: 'useFetchDemo',
+  com: useFetchDemo
+},{
+  name: 'useThrottleDemo',
+  com: useThrottleDemo
+},{
+  name: 'useDebounceDemo',
+  com: useDebounceDemo
+},{
+  name: 'useCookieStateDemo',
+  com: useCookieStateDemo
+},{
+  name: 'useStroageStateDemo',
+  com: useStroageStateDemo
+},{
+  name: 'useTimerDemo',
+  com: useTimerDemo
+},{
+  name: 'useCreationDemo',
+  com: useCreationDemo
+},{
+  name: 'useEventListenerDemo',
+  com: useEventListenerDemo
+}];
 
 class App extends Component {
 
@@ -20,24 +50,15 @@ class App extends Component {
         <Router>
           <div className = "nav">
             <div className = "left">
-              <NavLink  to="/index" activeClassName='cur'>useTimeoutDemo</NavLink>
-              <NavLink to="/fetch" activeClassName='cur' >useFetchDemo</NavLink>
-              <NavLink to="/useThrottleDemo" activeClassName='cur'>useThrottleDemo</NavLink>
-              <NavLink to="/useDebounceDemo" activeClassName='cur'>useDebounceDemo</NavLink>
-              <NavLink to="/useCookieStateDemo" activeClassName='cur'>useCookieStateDemo</NavLink>
-              <NavLink to="/useStroageStateDemo" activeClassName='cur'>useStroageStateDemo</NavLink>
-              <NavLink to="/useTimerDemo" activeClassName='cur'>useTimerDemo</NavLink>
-              <NavLink to="/useCreationDemo" activeClassName='cur'>useCreationDemo</NavLink>
+              {
+                List.map(item => <NavLink to={`/${item.name}`} key = {item.name} activeClassName='cur'>{item.name}</NavLink>)
+              }
             </div>
             <div className = "right">
-              <Route exact path="/index" component={useTimeoutDemo} />
-              <Route exact path="/fetch" component={useFetchDemo} />
-              <Route exact path="/useThrottleDemo" component={useThrottleDemo} />
-              <Route exact path="/useDebounceDemo" component={useDebounceDemo} />
-              <Route exact path="/useCookieStateDemo" component={useCookieStateDemo} />
-              <Route exact path="/useStroageStateDemo" component={useStroageStateDemo} />
-              <Route exact path="/useTimerDemo" component={useTimerDemo} />
-              <Route exact path="/useCreationDemo" component={useCreationDemo} />
+              {
+                List.map(item => <Route exact path={`/${item.name}`} key = {item.name} component = {item.com} />)
+              }
+              <Redirect to="/useTimeoutDemo"/>
             </div>
         </div>
       </Router>
