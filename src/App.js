@@ -9,6 +9,7 @@ import useDebounceDemo from './demo/useDebounce';
 import useCookieStateDemo from './demo/useCookieState';
 import useStroageStateDemo from './demo/useStroageState';
 import useTimerDemo from './demo/useTimer';
+import useCreationDemo from './demo/useCreation';
 
 import './index.less';
 
@@ -26,6 +27,7 @@ class App extends Component {
               <NavLink to="/useCookieStateDemo" activeClassName='cur'>useCookieStateDemo</NavLink>
               <NavLink to="/useStroageStateDemo" activeClassName='cur'>useStroageStateDemo</NavLink>
               <NavLink to="/useTimerDemo" activeClassName='cur'>useTimerDemo</NavLink>
+              <NavLink to="/useCreationDemo" activeClassName='cur'>useCreationDemo</NavLink>
             </div>
             <div className = "right">
               <Route exact path="/index" component={useTimeoutDemo} />
@@ -35,6 +37,7 @@ class App extends Component {
               <Route exact path="/useCookieStateDemo" component={useCookieStateDemo} />
               <Route exact path="/useStroageStateDemo" component={useStroageStateDemo} />
               <Route exact path="/useTimerDemo" component={useTimerDemo} />
+              <Route exact path="/useCreationDemo" component={useCreationDemo} />
             </div>
         </div>
       </Router>
