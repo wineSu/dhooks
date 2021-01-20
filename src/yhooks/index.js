@@ -21,3 +21,7 @@ export {
 export {
     useCookieState
 } from './useCookieState';
+
+export {
+    useStroageState
+} from './useStroageState';

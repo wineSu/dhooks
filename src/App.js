@@ -7,6 +7,7 @@ import useFetchDemo from './demo/useFetch';
 import useThrottleDemo from './demo/useThrottle';
 import useDebounceDemo from './demo/useDebounce';
 import useCookieStateDemo from './demo/useCookieState';
+import useStroageStateDemo from './demo/useStroageState';
 
 import './index.less';
 
@@ -22,6 +23,7 @@ class App extends Component {
               <NavLink to="/useThrottleDemo" activeClassName='cur'>useThrottleDemo</NavLink>
               <NavLink to="/useDebounceDemo" activeClassName='cur'>useDebounceDemo</NavLink>
               <NavLink to="/useCookieStateDemo" activeClassName='cur'>useCookieStateDemo</NavLink>
+              <NavLink to="/useStroageStateDemo" activeClassName='cur'>useStroageStateDemo</NavLink>
             </div>
             <div className = "right">
               <Route exact path="/index" component={useTimeoutDemo} />
@@ -29,6 +31,7 @@ class App extends Component {
               <Route exact path="/useThrottleDemo" component={useThrottleDemo} />
               <Route exact path="/useDebounceDemo" component={useDebounceDemo} />
               <Route exact path="/useCookieStateDemo" component={useCookieStateDemo} />
+              <Route exact path="/useStroageStateDemo" component={useStroageStateDemo} />
             </div>
         </div>
       </Router>

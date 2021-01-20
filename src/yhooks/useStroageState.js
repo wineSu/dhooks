@@ -1,14 +1,17 @@
 import { useCallback, useState } from 'react';
 
-export function useCookieState(cookieKey, {dafaultVal, expire}) {
+export function useStroageState(cookieKey, {dafaultVal, expire}) {
+
+    const storage = window.localStorage;
+
     const [state, setState] = useState(() => {
-        return getCookie(cookieKey) || dafaultVal;
+        return storage.getItem(cookieKey) || dafaultVal;
     }); 
 
     const updateState = useCallback(
         (newValue) => {
             setState(() => {
-                setCookie(cookieKey, newValue, newValue ? expire : -1);
+                newValue ? storage.setItem(cookieKey, newValue) : storage.removeItem(cookieKey);
                 return newValue;
             });
         },
