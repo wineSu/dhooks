@@ -41,3 +41,15 @@ export {
 export {
     useInputTarget
 } from './useInputTarget';
+
+export {
+    useDocumentVisibility
+} from './useDocumentVisibility'; 
+
+export {
+    useDrop
+} from './useDrop';
+
+export {
+    useDrag
+} from './useDrag';

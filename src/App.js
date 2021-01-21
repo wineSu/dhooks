@@ -13,6 +13,8 @@ import useCreationDemo from './demo/useCreation';
 import useEventListenerDemo from './demo/useEventListener';
 import usePersistFnDemo from './demo/usePersistFn';
 import useInputTargetDemo from './demo/useInputTarget';
+import useDocumentVisibilityDemo from './demo/useDocumentVisibility';
+import useDropDemo from './demo/useDrop';
 
 import './index.less';
 
@@ -49,6 +51,12 @@ let List = [{
 },{
   name: 'useInputTargetDemo',
   com: useInputTargetDemo
+},{
+  name: 'useDocumentVisibilityDemo',
+  com: useDocumentVisibilityDemo
+},{
+  name: 'useDropDemo',
+  com: useDropDemo
 }];
 
 class App extends Component {
