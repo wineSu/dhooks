@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { usePersistFn } from './usePersistFn';
 
-let getTargetElement = (target, defaultElement) => {
+export let getTargetElement = (target, defaultElement) => {
     
     if (!target) {
-      return defaultElement;
+      return defaultElement || window;
     }
-  
+
     let targetElement;
   
     if (typeof target === 'function') {
@@ -16,7 +16,7 @@ let getTargetElement = (target, defaultElement) => {
     } else {
       targetElement = target;
     }
-  
+
     return targetElement;
 }
 
@@ -30,10 +30,10 @@ export function useEventListener(eventName, handler, options = {}) {
 
     // 数据变化后更新handler  使得内部数据得以更新再次触发事件取得最新值
     const handlerFn = usePersistFn(handler);
-
+    
     useEffect(() => {
-        
         const targetElement = getTargetElement(options.target, window);
+
         if (!targetElement.addEventListener) {
             return;
         }

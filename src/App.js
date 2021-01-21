@@ -15,6 +15,7 @@ import usePersistFnDemo from './demo/usePersistFn';
 import useInputTargetDemo from './demo/useInputTarget';
 import useDocumentVisibilityDemo from './demo/useDocumentVisibility';
 import useDropDemo from './demo/useDrop';
+import useFullscreenDemo from './demo/useFullscreen';
 
 import './index.less';
 
@@ -57,6 +58,9 @@ let List = [{
 },{
   name: 'useDropDemo',
   com: useDropDemo
+},{
+  name: 'useFullscreenDemo',
+  com: useFullscreenDemo
 }];
 
 class App extends Component {

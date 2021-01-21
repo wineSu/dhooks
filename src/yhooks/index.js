@@ -53,3 +53,7 @@ export {
 export {
     useDrag
 } from './useDrag';
+
+export {
+    useFullscreen
+} from './useFullscreen';
