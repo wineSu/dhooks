@@ -37,3 +37,7 @@ export {
 export {
     useEventListener
 } from './useEventListener';
+
+export {
+    useInputTarget
+} from './useInputTarget';

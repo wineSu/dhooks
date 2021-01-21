@@ -12,6 +12,7 @@ import useTimerDemo from './demo/useTimer';
 import useCreationDemo from './demo/useCreation';
 import useEventListenerDemo from './demo/useEventListener';
 import usePersistFnDemo from './demo/usePersistFn';
+import useInputTargetDemo from './demo/useInputTarget';
 
 import './index.less';
 
@@ -45,6 +46,9 @@ let List = [{
 },{
   name: 'usePersistFnDemo',
   com: usePersistFnDemo
+},{
+  name: 'useInputTargetDemo',
+  com: useInputTargetDemo
 }];
 
 class App extends Component {
