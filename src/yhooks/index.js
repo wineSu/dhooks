@@ -65,3 +65,7 @@ export {
 export {
     useInterval
 } from './useInterval';
+
+export {
+    useInViewport
+} from './useInViewport';

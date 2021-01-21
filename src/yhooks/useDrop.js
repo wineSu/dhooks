@@ -26,6 +26,10 @@ const getProps = (
     },
 });
 
+/**
+ * 拖拽 文字 | 文件 | uri资源标识符 | dom 
+ * @param {*} options 
+ */
 export const useDrop = (options = {}) => {
 
     const optionsRef = useRef(options);

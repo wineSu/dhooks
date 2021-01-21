@@ -14,3 +14,4 @@ export { useDocumentVisibilityDemo } from './useDocumentVisibility';
 export { useDropDemo } from './useDrop';
 export { useFullscreenDemo } from './useFullscreen';
 export { useHoverDemo } from './useHover';
+export { useInViewportDemo } from './useInViewport';

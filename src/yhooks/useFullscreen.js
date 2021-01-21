@@ -40,6 +40,11 @@ const isFullScreen = () => {
     }
 }
 
+/**
+ * 全屏切换控制
+ * @param {*} target 
+ * @param {*} options 
+ */
 export function useFullscreen(target, options = {
     onFullRef: () => {},
     onExitFullRef: () => {},

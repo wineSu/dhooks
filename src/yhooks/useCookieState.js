@@ -1,10 +1,7 @@
 import { useCallback, useState } from 'react';
 
 const setCookie = (name, value, expire) => {   
-    window.document.cookie = name + 
-                                "=" + 
-                                escape(value) + 
-                                (!expire ? "" : ("; expires=" + expire.toGMTString()));
+    window.document.cookie = name + "=" + escape(value) + (!expire ? "" : ("; expires=" + expire.toGMTString()));
 }
 
 const getCookie = (Name) => {   

@@ -5,6 +5,9 @@ const getVisibility = () => {
     return window.document.visibilityState;
 };
 
+/**
+ * 页面当前状态获取
+ */
 export function useDocumentVisibility() {
   const [status, setStatus] = useState(() => getVisibility());
 
