@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useThrottle } from '../yhooks';
 
-const useThrottleDemo = () => {
+export const useThrottleDemo = () => {
   
   const [throttledValue, setThrottledValue] = useState();
 
@@ -29,5 +29,3 @@ const useThrottleDemo = () => {
     </div>
   );
 };
-
-export default useThrottleDemo;

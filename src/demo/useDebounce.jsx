@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useDebounce } from '../yhooks';
 
-const useDebounceDemo = () => {
+export const useDebounceDemo = () => {
   
   const [debouncedValue, setDebouncedVal] = useState();
 
@@ -26,5 +26,3 @@ const useDebounceDemo = () => {
     </div>
   );
 };
-
-export default useDebounceDemo;

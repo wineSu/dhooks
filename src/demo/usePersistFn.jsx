@@ -2,7 +2,7 @@
 import React, { useState, useCallback, useRef } from 'react';
 import { usePersistFn } from '../yhooks';
 
-const usePersistFnDemo = () => {
+export const usePersistFnDemo = () => {
   const [count, setCount] = useState(0);
 
   const showCountPersistFn = usePersistFn(() => {
@@ -36,5 +36,3 @@ const usePersistFnDemo = () => {
     </>
   );
 };
-
-export default usePersistFnDemo;

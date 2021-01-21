@@ -57,3 +57,11 @@ export {
 export {
     useFullscreen
 } from './useFullscreen';
+
+export {
+    useHover
+} from './useHover';
+
+export {
+    useInterval
+} from './useInterval';

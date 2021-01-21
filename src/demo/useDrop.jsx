@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDrop, useDrag } from '../yhooks';
 
-const useDropDemo = () => {
+export const useDropDemo = () => {
     const [dragging, setDragging] = useState(null);
 
     const getDragProps = useDrag({
@@ -59,5 +59,3 @@ const useDropDemo = () => {
         </div>
     );
 };
-
-export default useDropDemo;

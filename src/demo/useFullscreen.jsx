@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useFullscreen } from '../yhooks';
 
-const useFullscreenDemo = () => {
+export const useFullscreenDemo = () => {
   const ref = useRef();
 
   const [state, setstate] = useState('');
@@ -32,5 +32,3 @@ const useFullscreenDemo = () => {
     </div>
   );
 };
-
-export default useFullscreenDemo;

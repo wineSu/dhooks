@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { useCookieState } from '../yhooks';
 
-const useCookieStateDemo = () => {
+export const useCookieStateDemo = () => {
   const [message, setMessage] = useCookieState('useCookieStateString', {
       dafaultVal: 11,
       expire: null
@@ -16,4 +16,3 @@ const useCookieStateDemo = () => {
     />
   );
 };
-export default useCookieStateDemo;

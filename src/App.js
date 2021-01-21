@@ -1,71 +1,21 @@
-import React, { Component } from 'react';
-
-import { BrowserRouter as Router, Route, NavLink, Redirect } from "react-router-dom";
-
-import useTimeoutDemo from './demo/useTimeout';
-import useFetchDemo from './demo/useFetch';
-import useThrottleDemo from './demo/useThrottle';
-import useDebounceDemo from './demo/useDebounce';
-import useCookieStateDemo from './demo/useCookieState';
-import useStroageStateDemo from './demo/useStroageState';
-import useTimerDemo from './demo/useTimer';
-import useCreationDemo from './demo/useCreation';
-import useEventListenerDemo from './demo/useEventListener';
-import usePersistFnDemo from './demo/usePersistFn';
-import useInputTargetDemo from './demo/useInputTarget';
-import useDocumentVisibilityDemo from './demo/useDocumentVisibility';
-import useDropDemo from './demo/useDrop';
-import useFullscreenDemo from './demo/useFullscreen';
-
+import React from 'react';
+import { 
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  Redirect
+} from "react-router-dom";
+import * as demo from './demo';
 import './index.less';
 
-let List = [{
-  name: 'useTimeoutDemo',
-  com: useTimeoutDemo
-},{
-  name: 'useFetchDemo',
-  com: useFetchDemo
-},{
-  name: 'useThrottleDemo',
-  com: useThrottleDemo
-},{
-  name: 'useDebounceDemo',
-  com: useDebounceDemo
-},{
-  name: 'useCookieStateDemo',
-  com: useCookieStateDemo
-},{
-  name: 'useStroageStateDemo',
-  com: useStroageStateDemo
-},{
-  name: 'useTimerDemo',
-  com: useTimerDemo
-},{
-  name: 'useCreationDemo',
-  com: useCreationDemo
-},{
-  name: 'useEventListenerDemo',
-  com: useEventListenerDemo
-},{
-  name: 'usePersistFnDemo',
-  com: usePersistFnDemo
-},{
-  name: 'useInputTargetDemo',
-  com: useInputTargetDemo
-},{
-  name: 'useDocumentVisibilityDemo',
-  com: useDocumentVisibilityDemo
-},{
-  name: 'useDropDemo',
-  com: useDropDemo
-},{
-  name: 'useFullscreenDemo',
-  com: useFullscreenDemo
-}];
+let moduleList = Object.keys(demo);
 
-class App extends Component {
+const List = moduleList.map(item => ({
+  name: item,
+  com: demo[item]
+}))
 
-  render() {
+const App = () => {
     return (
         <Router>
           <div className = "nav">
@@ -83,7 +33,6 @@ class App extends Component {
         </div>
       </Router>
     );
-  }
 }
 
 export default App;

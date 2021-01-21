@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useEventListener } from '../yhooks';
 
-const useEventListenerDemo = () => {
+export const useEventListenerDemo = () => {
   const [value, setValue] = useState(0);
 
   const clickHandler = () => {
@@ -19,5 +19,3 @@ const useEventListenerDemo = () => {
     </button>
   );
 };
-
-export default useEventListenerDemo;

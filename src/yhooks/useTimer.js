@@ -20,7 +20,7 @@ export function useTimer(fn, second = 5) {
                         return 0;
                     }
                     count();
-                    return --v
+                    return --v;
                 })
             }, 1000);
         }

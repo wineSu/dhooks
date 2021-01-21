@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useTimer } from '../yhooks';
 
-const useTimerDemo = () => {
+export const useTimerDemo = () => {
 
   const [state] = useTimer(() => {
     console.log('end')
@@ -14,5 +14,3 @@ const useTimerDemo = () => {
     </div>
   );
 };
-
-export default useTimerDemo;

@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { useStroageState } from '../yhooks';
 
-const useStroageStateDemo = () => {
+export const useStroageStateDemo = () => {
   const [message, setMessage] = useStroageState('useStroageStateString', {
       dafaultVal: 11,
   });
@@ -15,4 +15,3 @@ const useStroageStateDemo = () => {
     />
   );
 };
-export default useStroageStateDemo;

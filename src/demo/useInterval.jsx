@@ -1,13 +1,13 @@
 
 import React, { useState } from 'react';
-import { useTimeout } from '../yhooks';
+import { useInterval } from '../yhooks';
 
-export const useTimeoutDemo = () => {
+export const useIntervalDemo = () => {
   const [state, setState] = useState(1);
 
-  useTimeout(() => {
+  useInterval(() => {
     setState(state + 1);
-  }, 3000);
+  }, 1000);
 
   return (
     <div>

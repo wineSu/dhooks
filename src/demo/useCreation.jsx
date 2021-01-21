@@ -8,7 +8,7 @@ class Foo {
   }
 }
 
-export default function useCreationDemo () {
+export function useCreationDemo () {
 
   const foo = useCreation(() => new Foo());
 

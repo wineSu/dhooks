@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useDocumentVisibility } from '../yhooks';
 
-const useDocumentVisibilityDemo = () => {
+export const useDocumentVisibilityDemo = () => {
   const documentVisibility = useDocumentVisibility();
 
   useEffect(() => {
@@ -15,5 +15,3 @@ const useDocumentVisibilityDemo = () => {
 
   return <div>控制台查看页面状态: {documentVisibility}</div>;
 };
-
-export default useDocumentVisibilityDemo;

@@ -6,7 +6,7 @@ import { useInputTarget } from '../yhooks';
  * 2. 不需要 onCompositionEnd 的控制则可以加上 value = {value} 进行状态受控
  * 3. onCompositionEnd 和受控情况不允许同时出现
  */
-const useInputTargetDemo = () => {
+export const useInputTargetDemo = () => {
     let input = useRef();
     const [value, { 
         reset,
@@ -34,5 +34,3 @@ const useInputTargetDemo = () => {
         </Fragment>
     );
 };
-
-export default useInputTargetDemo;

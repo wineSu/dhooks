@@ -29,7 +29,7 @@ function loadImg(url, i) {
   });
 }
 
-const useFetchDemo = () => {
+export const useFetchDemo = () => {
 
   const [res] = useFetch(loadImg, urls, 2);
   
@@ -42,5 +42,3 @@ const useFetchDemo = () => {
     </div>
   );
 };
-
-export default useFetchDemo;

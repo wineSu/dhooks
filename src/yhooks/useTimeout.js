@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { usePersistFn } from './usePersistFn'
+import { usePersistFn } from './usePersistFn';
 /**
  * 定时器
  * @param {*} fn 
