@@ -20,7 +20,7 @@ npm i yhooks --save
 
 ## 🔨 Usage
 
-```typescript
+```
 import { useXXXX } from 'yhooks';
 ```
 
