@@ -1,5 +1,5 @@
 
-# yhooks
+# dhooks
 
 React Hooks Library.
 
@@ -15,13 +15,13 @@ React Hooks Library.
 ## 📦 Install
 
 ```
-npm i yhooks --save
+yarn add dhooks
 ```
 
 ## 🔨 Usage
 
 ```typescript
-import { useXXXX } from 'yhooks';
+import { useXXXX } from 'dhooks';
 ```
 
 ## 🤝 Contributing
