@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNetwork } from '../yhooks';
+import { useNetwork } from '../dhooks';
 
 export const useNetworkDemo = () => {
     const networkState = useNetwork();

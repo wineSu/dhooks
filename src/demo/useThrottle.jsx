@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { useThrottle } from '../yhooks';
+import { useThrottle } from '../dhooks';
 
 export const useThrottleDemo = () => {
   

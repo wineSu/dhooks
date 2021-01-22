@@ -27,7 +27,7 @@ import { useXXXX } from 'dhooks';
 ## 🤝 Contributing
 
 ```
-$ git clone https://github.com/wineSu/yhooks.git
+$ git clone https://github.com/wineSu/dhooks.git
 $ cd yhooks
 $ npm i
 $ npm run start

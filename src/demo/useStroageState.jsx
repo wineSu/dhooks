@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { useStroageState } from '../yhooks';
+import { useStroageState } from '../dhooks';
 
 export const useStroageStateDemo = () => {
   const [message, setMessage] = useStroageState('useStroageStateString', {

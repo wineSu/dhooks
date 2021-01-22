@@ -1,5 +1,5 @@
 import React, { Fragment, useRef } from 'react';
-import { useInputTarget } from '../yhooks';
+import { useInputTarget } from '../dhooks';
 
 /**
  * 1. 需要进行 onCompositionEnd 的控制并且需要赋初始值的情况需要给input增加ref标识

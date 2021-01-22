@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTextSelection } from '../yhooks';
+import { useTextSelection } from '../dhooks';
 
 export const useTextSelectionDemo = () => {
   const { text } = useTextSelection();

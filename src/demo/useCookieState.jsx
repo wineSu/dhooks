@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { useCookieState } from '../yhooks';
+import { useCookieState } from '../dhooks';
 
 export const useCookieStateDemo = () => {
   const [message, setMessage] = useCookieState('useCookieStateString', {

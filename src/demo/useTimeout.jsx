@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { useTimeout } from '../yhooks';
+import { useTimeout } from '../dhooks';
 
 export const useTimeoutDemo = () => {
   const [state, setState] = useState(1);

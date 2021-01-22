@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLockFn } from '../yhooks';
+import { useLockFn } from '../dhooks';
 
 function mockApiRequest() {
   return new Promise((resolve) => {

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { useDebounce } from '../yhooks';
+import { useDebounce } from '../dhooks';
 
 export const useDebounceDemo = () => {
   

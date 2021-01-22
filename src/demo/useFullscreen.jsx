@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { useFullscreen } from '../yhooks';
+import { useFullscreen } from '../dhooks';
 
 export const useFullscreenDemo = () => {
   const ref = useRef();

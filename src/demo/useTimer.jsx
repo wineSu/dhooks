@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { useTimer } from '../yhooks';
+import { useTimer } from '../dhooks';
 
 export const useTimerDemo = () => {
 

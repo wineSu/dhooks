@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { useDocumentVisibility } from '../yhooks';
+import { useDocumentVisibility } from '../dhooks';
 
 export const useDocumentVisibilityDemo = () => {
   const documentVisibility = useDocumentVisibility();

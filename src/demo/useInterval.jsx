@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { useInterval } from '../yhooks';
+import { useInterval } from '../dhooks';
 
 export const useIntervalDemo = () => {
   const [state, setState] = useState(1);

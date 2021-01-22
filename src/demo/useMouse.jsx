@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import { useMouse } from '../yhooks';
+import { useMouse } from '../dhooks';
 
 export const useMouseDemo = () => {
 

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useEventListener } from '../yhooks';
+import { useEventListener } from '../dhooks';
 
 export const useEventListenerDemo = () => {
   const [value, setValue] = useState(0);

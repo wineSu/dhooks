@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useFetch } from '../yhooks';
+import { useFetch } from '../dhooks';
 
 var urls = [
   'https://www.kkkk1000.com/images/getImgData/getImgDatadata.jpg',

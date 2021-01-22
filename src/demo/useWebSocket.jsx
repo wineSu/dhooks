@@ -1,5 +1,5 @@
 import React, { useRef, useMemo } from 'react';
-import { useWebSocket } from '../yhooks';
+import { useWebSocket } from '../dhooks';
 
 const ReadyState = {
   Connecting: 0,

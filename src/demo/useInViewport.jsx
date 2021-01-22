@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { useInViewport } from '../yhooks';
+import { useInViewport } from '../dhooks';
 
 export const useInViewportDemo = () => {
   const ref = useRef();

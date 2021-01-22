@@ -1,6 +1,6 @@
 
 import React, { useState, useCallback, useRef } from 'react';
-import { usePersistFn } from '../yhooks';
+import { usePersistFn } from '../dhooks';
 
 export const usePersistFnDemo = () => {
   const [count, setCount] = useState(0);

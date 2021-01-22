@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { useTrackedEffect } from '../yhooks';
+import { useTrackedEffect } from '../dhooks';
 
 export const useTrackedEffectDemo = () => {
     const [dep1, setDep1] = useState(0);
