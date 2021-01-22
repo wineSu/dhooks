@@ -6,13 +6,20 @@
     a{
         display: block;
     }
-    user-select: none;
+}
+.nav::after{
+    content: '';
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
 }
 .left{
     float: left;
     width: 220px;
     background: #5a6584;
     text-align: center;
+    user-select: none;
     a{
         text-decoration: none;
         color: #fff;

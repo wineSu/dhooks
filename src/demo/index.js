@@ -17,3 +17,7 @@ export { useHoverDemo } from './useHover';
 export { useInViewportDemo } from './useInViewport';
 export { useLockFnDemo } from './useLockFn';
 export { useMouseDemo } from './useMouse';
+export { useNetworkDemo } from './useNetwork';
+export { useScrollDemo } from './useScroll';
+export { useTextSelectionDemo } from './useTextSelection';
+export { useTrackedEffectDemo } from './useTrackedEffect';
