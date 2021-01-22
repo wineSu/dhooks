@@ -69,3 +69,7 @@ export {
 export {
     useInViewport
 } from './useInViewport';
+
+export {
+    useLockFn
+} from './useLockFn';
