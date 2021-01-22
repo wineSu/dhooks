@@ -93,3 +93,7 @@ export {
 export {
     useTrackedEffect
 } from './useTrackedEffect';
+
+export {
+    useVirtualList
+} from './useVirtualList';

@@ -21,3 +21,4 @@ export { useNetworkDemo } from './useNetwork';
 export { useScrollDemo } from './useScroll';
 export { useTextSelectionDemo } from './useTextSelection';
 export { useTrackedEffectDemo } from './useTrackedEffect';
+export { useVirtualListDemo } from './useVirtualList';
