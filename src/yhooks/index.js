@@ -97,3 +97,7 @@ export {
 export {
     useVirtualList
 } from './useVirtualList';
+
+export {
+    useWebSocket
+} from './useWebSocket';
