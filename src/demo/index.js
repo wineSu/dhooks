@@ -16,3 +16,4 @@ export { useFullscreenDemo } from './useFullscreen';
 export { useHoverDemo } from './useHover';
 export { useInViewportDemo } from './useInViewport';
 export { useLockFnDemo } from './useLockFn';
+export { useMouseDemo } from './useMouse';

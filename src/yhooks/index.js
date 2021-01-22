@@ -73,3 +73,7 @@ export {
 export {
     useLockFn
 } from './useLockFn';
+
+export {
+    useMouse
+} from './useMouse';
