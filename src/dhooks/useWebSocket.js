@@ -9,7 +9,7 @@ const ReadyState = {
 }
 
 /**
- * 抄的 全是抄的
+ * useWebSocket
  * @param {*} socketUrl 
  * @param {*} options 
  */
