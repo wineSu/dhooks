@@ -23,3 +23,4 @@ export { useTextSelectionDemo } from './useTextSelection';
 export { useTrackedEffectDemo } from './useTrackedEffect';
 export { useVirtualListDemo } from './useVirtualList';
 export { useWebSocketDemo } from './useWebSocket';
+export { useChartDemo } from './useChart';

@@ -101,3 +101,7 @@ export {
 export {
     useWebSocket
 } from './useWebSocket';
+
+export {
+    useCharts
+} from './useCharts';
