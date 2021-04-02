@@ -7,8 +7,7 @@ let echarts = require('echarts');
 /**
  * echarts使用
  * @param {*} fn 
- * @param {*} delay 
- * @param {*} dep 
+ * @param {*} option 
  */
 export function useCharts(id, option) {
 
