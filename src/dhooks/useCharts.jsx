@@ -2,11 +2,11 @@ import {
     useRef,
     useEffect,
 } from 'react';
-let echarts = require('echarts');
+import echarts from 'echarts/lib/echarts';
 
 /**
  * echarts使用
- * @param {*} fn 
+ * @param {*} id 
  * @param {*} option 
  */
 export function useCharts(id, option) {
@@ -16,7 +16,7 @@ export function useCharts(id, option) {
     useEffect(() => {
         let mapInit = echarts.init(document.getElementById(id));
         mapInit.setOption(option);
-        current.render = mapInit.setOption;
+        current.render = mapInit;
     }, []);
 
     return current;
