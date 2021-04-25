@@ -105,3 +105,7 @@ export {
 export {
     useCharts
 } from './useCharts';
+
+export {
+    useRaf
+} from './useRaf';
