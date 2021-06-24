@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import * as echarts from "echarts";
-//import { useDeepCompareEffect } from './compare';
+import { useDeepCompareEffect } from "./useDeepCompareEffect";
 
 /**
  * echarts使用
@@ -14,9 +14,9 @@ export function useCharts(id, option = {}, dep) {
     map.resize();
   };
 
-  // useDeepCompareEffect(() => {
-  //   current.render && current.render.setOption(option)
-  // }, dep)
+  useDeepCompareEffect(() => {
+    current.render && current.render.setOption(option)
+  }, dep)
 
   useEffect(() => {
     let mapInit = echarts.init(document.getElementById(id));
