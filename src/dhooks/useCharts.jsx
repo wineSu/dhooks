@@ -10,7 +10,10 @@ import { useDeepCompareEffect } from './compare';
  */
 export function useCharts(id, option = {}, dep) {
   const { current } = useRef({});
-
+  const onResize = map => {
+    map.resize();
+  };
+  
   useDeepCompareEffect(() => {
     current.render && current.render.setOption(option)
   }, dep)
@@ -19,8 +22,12 @@ export function useCharts(id, option = {}, dep) {
     let mapInit = echarts.init(document.getElementById(id));
     mapInit.setOption(option);
     current.render = mapInit;
+
+    window.addEventListener("resize", () => onResize(mapInit));
+
     return () => {
       mapInit.dispose();
+      window.removeEventListener("resize", onResize);
     };
   }, []);
 
