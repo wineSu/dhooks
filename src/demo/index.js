@@ -25,3 +25,4 @@ export { useVirtualListDemo } from './useVirtualList';
 export { useWebSocketDemo } from './useWebSocket';
 export { useChartDemo } from './useChart';
 export { useRafDemo } from './useRaf';
+export { useWhyDidYouUpdateDemo } from './useWhyDidYouUpdate';

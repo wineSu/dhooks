@@ -109,3 +109,7 @@ export {
 export {
     useRaf
 } from './useRaf';
+
+export {
+    useWhyDidYouUpdate
+} from './useWhyDidYouUpdate';
