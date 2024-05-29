@@ -1,4 +1,4 @@
-import { useState } from '@framework/FOXRax.js';
+import { useState } from 'react';
 import useAsyncEffect from 'useAsyncEffect';
 
 /**
