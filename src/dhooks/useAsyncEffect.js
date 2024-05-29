@@ -1,4 +1,4 @@
-import { useEffect } from '@framework/FOXRax.js';
+import { useEffect } from 'react';
 
 const isFunction = (value) => typeof value === 'function';
 
